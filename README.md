@@ -9,7 +9,7 @@ This Python tool lets you encode or decode messages using the Caesar cipher, a s
 A substitution cipher replaces plaintext letters with ciphertext letters based on a fixed system. The Caesar cipher is a classic, shifting letters by a certain number of positions. 
 
 
-# What is the Caesar Cipher?
+## What is the Caesar Cipher?
 
 The Caesar cipher is a type of substitution cipher named after Julius Caesar, who is believed to have used it to communicate confidential information. In the Caesar cipher, each letter in the plaintext is shifted a fixed number of positions down or up the alphabet.
 
@@ -17,15 +17,15 @@ For example, with a shift of 3 (which is a common choice in Caesar ciphers), 'A'
 
 There is a table representing the changes of this logic at the bottom of this readme if you want a visual of it.
 
+## Code Logic
 
+The Python script provides two main functions for encoding and decoding text using the Caesar cipher. 
 
-# Features
-This app has two functions, encoding text and decoding text. For my app, encoding text is "scrambling text", and decoding text is "unscrambling text". This allows you to check your Caesar ciphers both ways to make sure you've got it right.
+1. `shift_letters(text, shift)`: Shifts the letters in the given text by the specified number of spaces. This essentially "scrambles" the letters.
 
+2. `unshift_letters(text, shift)`: Unshifts the letters in the given text by the specified number of spaces. This "unscrambles" the letters.
 
-Encode Text: Shift letters in a given text forward by a specified number of spaces.
-
-Decode Text: Shift letters in a given text backward by a specified number of spaces to decode it.
+The script prompts the user to choose between encoding or decoding, specifies the number of spaces to shift, and inputs the text to be processed. Then, based on the user's choice, it either encodes or decodes the text using the appropriate function.
 
 ## Usage
 
@@ -33,9 +33,9 @@ Decode Text: Shift letters in a given text backward by a specified number of spa
 
 2. Run the app.
    
-3. Follow the prompts to enter the number of spaces to shift and the text to encode or decode.
+3. Follow the prompts to enter the number of spaces to shift and the text to encode or decode. 
 
-# Example Output
+## Example Output
 Do you want to encode (scramble) or decode (unscramble)? Enter 'encode' or 'decode': encode
 
 Enter how many times the letters should be shifted: 3
